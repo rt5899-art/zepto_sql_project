@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-This project provides a comprehensive end-to-end data analysis of Zepto's product inventory, pricing strategy, and stock availability. By leveraging SQL for data cleaning and exploration and Excel, this analysis uncovers critical patterns in revenue generation, discount distribution, and logistics planning to optimize e-commerce operations.
+This project provides a comprehensive end-to-end data analysis of Zepto's product inventory, pricing strategy, and stock availability. By leveraging SQL for data cleaning and exploration. This analysis uncovers critical patterns in revenue generation, discount distribution, and logistics planning to optimize e-commerce operations.
 
 ### Tools & Technologies
 SQL (PostgreSQL): Data structuring, ingestion, and advanced querying.
@@ -32,6 +32,7 @@ The goal is to simulate how actual data analysts in the e-commerce or retail ind
 * Inelastic Demand Items: Isolated high-demand items priced above Rs. 500 that maintain strong sales momentum despite pulling in less than 10% discount, proving their status as core staple products that do not require profit-margin sacrifices.
 
 * Logistical Footprint: Classified the entire inventory into Low, Medium, and Bulk weight tiers based on item mass, providing visibility into physical storage constraints and delivery fleet requirements
+  
 ### Recommendations
 
 * Insight: 15% of high-demand SKUs frequently run out of stock.
