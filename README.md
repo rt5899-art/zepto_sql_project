@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-This project provides a comprehensive data analytics solution evaluating operational metrics, product availability, and pricing strategies for Zepto. By leveraging SQL and Excel, the analysis transforms raw transactional and inventory data into actionable business intelligence to optimize stock management and maximize revenue.
+This project provides a comprehensive end-to-end data analysis of Zepto's product inventory, pricing strategy, and stock availability. By leveraging SQL for data cleaning and exploration and Excel, this analysis uncovers critical patterns in revenue generation, discount distribution, and logistics planning to optimize e-commerce operations.
 
 ### Tools & Technologies
 SQL (PostgreSQL): Data structuring, ingestion, and advanced querying.
@@ -11,38 +11,27 @@ Excel: Initial data triage and format validation.
 
 ### Technical Pipeline & Implementation
 
-#### 1. Database Schema Creation
+### Data Pipeline
 
-We start by creating a SQL table with appropriate data types:
+The goal is to simulate how actual data analysts in the e-commerce or retail industries work behind the scenes to use SQL to:
 
-SQL
-CREATE TABLE zepto (
-  sku_id SERIAL PRIMARY KEY,
-  category VARCHAR(120),
-  name VARCHAR(150) NOT NULL,
-  mrp NUMERIC(8,2),
-  discountPercent NUMERIC(5,2),
-  availableQuantity INTEGER,
-  discountedSellingPrice NUMERIC(8,2),
-  weightInGms INTEGER,
-  outOfStock BOOLEAN,
-  quantity INTEGER
-);
+*  Set up a messy, real-world e-commerce inventory **database**
 
-#### 2. Data Import
+* Perform **Exploratory Data Analysis (EDA)** to explore product categories, availability, and pricing inconsistencies
 
-Loaded CSV using pgAdmin's import feature.
+*  Implement **Data Cleaning** to handle null values, remove invalid entries, and convert pricing from paise to rupees
+
+* Write **business-driven SQL queries** to derive insights around **pricing, inventory, stock availability, revenue** and more
 
 ### Key Business Insights
 
-* Inventory Availability: A significant 15% of high-demand SKUs frequently experience out-of-stock scenarios, leading to potential revenue leakage.
+* High-Value Promotions: Identified the top 10 best-value products featuring maximum discounts exceeding 50%, pinpointing items heavily utilized for customer acquisition and aggressive marketing.
 
-* Pricing & Discounts: Products with discounts exceeding 25% show a 40% increase in sales volume, but a compressed profit margin.
+* Revenue Leakage: Uncovered premium, high-MRP products (priced above Rs. 300) that are currently completely out of stock, resulting in immediate missed revenue opportunities.
 
-* Category Performance: The fresh produce and FMCG categories contribute to 65% of total order volume, serving as primary customer acquisition drivers.
+* Inelastic Demand Items: Isolated high-demand items priced above Rs. 500 that maintain strong sales momentum despite pulling in less than 10% discount, proving their status as core staple products that do not require profit-margin sacrifices.
 
-* Stock Concentration: Over 50% of warehouse volume is occupied by slow-moving stock, tying up working capital.
-
+* Logistical Footprint: Classified the entire inventory into Low, Medium, and Bulk weight tiers based on item mass, providing visibility into physical storage constraints and delivery fleet requirements
 ### Recommendations
 
 * Insight: 15% of high-demand SKUs frequently run out of stock.
