@@ -11,8 +11,6 @@ Excel: Initial data triage and format validation.
 
 ### Technical Pipeline & Implementation
 
-### Data Pipeline
-
 The goal is to simulate how actual data analysts in the e-commerce or retail industries work behind the scenes to use SQL to:
 
 *  Set up a messy, real-world e-commerce inventory **database**
