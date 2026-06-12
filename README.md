@@ -35,12 +35,12 @@ The goal is to simulate how actual data analysts in the e-commerce or retail ind
 
 * Insight: 15% of high-demand SKUs frequently run out of stock.
 
-➔ Action: Implement an automated reorder trigger in the inventory pipeline when stock falls below a 2-day average velocity threshold.
+  ➔ Action: Implement an automated reorder trigger in the inventory pipeline when stock falls below a 2-day average velocity threshold.
 
 * Insight: High discounts compress margins despite driving high sales volume.
 
-➔ Action: Shift from flat discounts to dynamic, bundle-based pricing architectures to increase Average Order Value (AOV).
+  ➔ Action: Shift from flat discounts to dynamic, bundle-based pricing architectures to increase Average Order Value (AOV).
 
 * Insight: Slow-moving stock occupies 50% of current warehouse capacity.
 
-➔ Action: Initiate targeted promotional liquidation campaigns or flash sales for stagnant inventory to free up capital and space.
+  ➔ Action: Initiate targeted promotional liquidation campaigns or flash sales for stagnant inventory to free up capital and space.
